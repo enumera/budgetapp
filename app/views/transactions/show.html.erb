@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category:</b>
+  <%= @transaction.category.name %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @transaction.amount %>
+</p>
+
+<p>
+  <b>Weekly budget:</b>
+  <%= @transaction.weekly_budget.weekno %>
+</p>
+
+
+<%= link_to 'Edit', edit_weekly_budget_transaction_path(@weekly_budget, @transaction) %> |
+<%= link_to 'Back', weekly_budget_transactions_path %>
