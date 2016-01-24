@@ -10,7 +10,7 @@ b = Budget.create(name: "MyBudget")
 Category.create(name: "Food")
 Category.create(name: "Fun")
 
-w = WeeklyBudget.create(current_fund: 100, start_fund: 100, weekno: 1, start_date:"2016-01-18", end_date: "2016-01-24")
+w = WeeklyBudget.create(current_fund: 100, start_fund: 100, weekno: 1, start_date:"2016-01-24", end_date: "2016-01-31")
 w.budget = b
 w.save
 
